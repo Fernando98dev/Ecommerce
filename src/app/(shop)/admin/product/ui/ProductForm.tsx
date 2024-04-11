@@ -91,7 +91,7 @@ export const ProductForm = ({ product, categories }: Props) => {
     const { ok, product:updatedProduct } = await createUpdateProduct(formData);
 
     if ( !ok ) {
-      alert('Producto no se pudo actualizar');
+      alert('Product could not be updated');
       return;
     }
 
@@ -126,7 +126,7 @@ export const ProductForm = ({ product, categories }: Props) => {
         </div>
 
         <div className="flex flex-col mb-2">
-          <span>Descripción</span>
+          <span>Description</span>
           <textarea
             rows={5}
             className="p-2 border rounded-md bg-gray-200"
@@ -167,7 +167,7 @@ export const ProductForm = ({ product, categories }: Props) => {
         </div>
 
         <div className="flex flex-col mb-2">
-          <span>Categoria</span>
+          <span>Category</span>
           <select
             className="p-2 border rounded-md bg-gray-200"
             {...register("categoryId", { required: true })}
@@ -181,13 +181,13 @@ export const ProductForm = ({ product, categories }: Props) => {
           </select>
         </div>
 
-        <button className="btn-primary w-full">Guardar</button>
+        <button className="btn-primary w-full">Save</button>
       </div>
 
       {/* Selector de tallas y fotos */}
       <div className="w-full">
         <div className="flex flex-col mb-2">
-          <span>Inventario</span>
+          <span>Inventory</span>
           <input
             type="number"
             className="p-2 border rounded-md bg-gray-200"
@@ -197,7 +197,7 @@ export const ProductForm = ({ product, categories }: Props) => {
 
         {/* As checkboxes */}
         <div className="flex flex-col">
-          <span>Tallas</span>
+          <span>Sizes</span>
           <div className="flex flex-wrap">
             {sizes.map((size) => (
               // bg-blue-500 text-white <--- si está seleccionado
@@ -217,7 +217,7 @@ export const ProductForm = ({ product, categories }: Props) => {
           </div>
 
           <div className="flex flex-col mb-2">
-            <span>Fotos</span>
+            <span>Images</span>
             <input
               type="file"
               { ...register('images') }
@@ -243,7 +243,7 @@ export const ProductForm = ({ product, categories }: Props) => {
                   onClick={() => deleteProductImage(image.id, image.url)}
                   className="btn-danger w-full rounded-b-xl"
                 >
-                  Eliminar
+                  Eliminate
                 </button>
               </div>
             ))}

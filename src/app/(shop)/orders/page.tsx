@@ -33,19 +33,19 @@ export default async function OrdersPage() {
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Nombre completo
+                Complete name
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Estado
+                Estatus
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Opciones
+                Options
               </th>
             </tr>
           </thead>
@@ -76,7 +76,7 @@ export default async function OrdersPage() {
                 </td>
                 <td className="text-sm text-gray-900 font-light px-6 ">
                   <Link href={`/orders/${ order.id }`} className="hover:underline">
-                    Ver orden
+                    See order
                   </Link>
                 </td>
               </tr>

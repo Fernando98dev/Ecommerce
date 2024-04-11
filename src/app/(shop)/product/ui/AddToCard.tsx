@@ -36,7 +36,7 @@ export const AddToCard = ({product}: Props) => {
   return (
     <>
     {posted && !size &&(
-        <p className='mt-2 text-red-500 fade-in'> Debe seleccionar una talla</p>
+        <p className='mt-2 text-red-500 fade-in'> Must select a Size</p>
     )}
     
      {/*selector de tallas */}
@@ -49,9 +49,24 @@ export const AddToCard = ({product}: Props) => {
         
         />
         {/*buton */}
-        <button 
+        {
+        (size === undefined) && (
+          <button
+
+            className="btn-disabled my-5">Select a size</button>
+
+        )
+      }
+
+      {
+        (size !== undefined) && (
+          <button
         onClick={addToCard}
-        className="btn-primary my-5">Agregar al carrito</button>
+        className="btn-primary my-5">Add to card</button>
+
+        )
+      }
+      
     </>
   )
 }

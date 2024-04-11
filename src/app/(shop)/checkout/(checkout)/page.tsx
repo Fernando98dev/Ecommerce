@@ -16,16 +16,16 @@ export default function CheckoutPage() {
 
       <div className="flex flex-col w-[1000px]">
 
-        <Title title='Verificar orden' />
+        <Title title='Verify Order' />
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
 
           {/* Carrito */ }
           <div className="flex flex-col mt-5">
-            <span className="text-xl">Ajustar elementos</span>
+            <span className="text-xl">Adjust Elements</span>
             <Link href="/cart" className="underline mb-5">
-              Editar carrito
+              Edit Shopping cart
             </Link>
 
 

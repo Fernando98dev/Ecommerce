@@ -60,7 +60,7 @@ export const Sidebar = () => {
           <IoSearchOutline size={20} className="absolute top-2 left-2" />
           <input
             type="text"
-            placeholder="Buscar"
+            placeholder="Seacrh"
             className="w-full bg-gray-50 rounded pl-10 py-1 pr-10 border-b-2 text-xl border-gray-200 focus:outline-none focus:border-blue-500"
           />
         </div>
@@ -75,7 +75,7 @@ export const Sidebar = () => {
               className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
             >
               <IoPersonOutline size={30} />
-              <span className="ml-3 text-xl">Perfil</span>
+              <span className="ml-3 text-xl">Profile</span>
             </Link>
 
             <Link
@@ -84,7 +84,7 @@ export const Sidebar = () => {
               className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
             >
               <IoTicketOutline size={30} />
-              <span className="ml-3 text-xl">Ordenes</span>
+              <span className="ml-3 text-xl">Orders</span>
             </Link>
           </>
         )}
@@ -95,7 +95,7 @@ export const Sidebar = () => {
             onClick={() => logout()}
           >
             <IoLogOutOutline size={30} />
-            <span className="ml-3 text-xl">Salir</span>
+            <span className="ml-3 text-xl">log out</span>
           </button>
         )}
 
@@ -106,7 +106,7 @@ export const Sidebar = () => {
             onClick={() => closeMenu()}
           >
             <IoLogInOutline size={30} />
-            <span className="ml-3 text-xl">Ingresar</span>
+            <span className="ml-3 text-xl">Log in</span>
           </Link>
         )}
 
@@ -121,7 +121,7 @@ export const Sidebar = () => {
               className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
             >
               <IoShirtOutline size={30} />
-              <span className="ml-3 text-xl">Productos</span>
+              <span className="ml-3 text-xl">Products</span>
             </Link>
 
             <Link
@@ -130,7 +130,7 @@ export const Sidebar = () => {
               className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
             >
               <IoTicketOutline size={30} />
-              <span className="ml-3 text-xl">Ordenes</span>
+              <span className="ml-3 text-xl">Orders</span>
             </Link>
 
             <Link
@@ -139,7 +139,7 @@ export const Sidebar = () => {
               className="flex items-center mt-10 p-2 hover:bg-gray-100 rounded transition-all"
             >
               <IoPeopleOutline size={30} />
-              <span className="ml-3 text-xl">Usuarios</span>
+              <span className="ml-3 text-xl">Users</span>
             </Link>
           </>
         )}

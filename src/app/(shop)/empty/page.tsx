@@ -10,14 +10,14 @@ export default function() {
 
       <div className="flex flex-col items-center">
         <h1 className="text-xl font-semibold">
-          Tu carrito está vacío
+          your shopping cart its empty
         </h1>
 
         <Link 
           href='/'
           className="text-blue-500 mt-2 text-4xl"
         >
-          Regresar
+          Return
         </Link>
 
       </div>

@@ -22,7 +22,7 @@ export default async function({params}:Props) {
   if(gender === 'kid'){
     return (
       <div>
-        <h1>Articulos para Niños</h1>
+        <h1>Articles for Kids</h1>
         
         {
           <ProductGrid products={products.filter((product)=> product.gender.includes("kid"))} />
@@ -35,7 +35,7 @@ export default async function({params}:Props) {
   if(gender === 'men'){
     return (
       <div>
-        <h1>Articulos para Hombres</h1>
+        <h1>Articles for Men</h1>
         
         {
           <ProductGrid products={products.filter((product)=> product.gender.includes("men"))} />
@@ -47,7 +47,7 @@ export default async function({params}:Props) {
   if(gender === 'women'){
     return (
       <div>
-        <h1>Articulos para Mujeres</h1>
+        <h1>Articles for women</h1>
         
         {
           <ProductGrid products={products.filter((product)=> product.gender.includes("women"))} />

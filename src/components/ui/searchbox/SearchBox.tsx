@@ -42,7 +42,7 @@ export const SearchBox = () => {
         onChange={(e) => setQuery(e.target.value)}
         className="p-2 border rounded-md bg-gray-100"
         defaultValue={searchParams.get('query')?.toString()}
-        placeholder='Buscar'
+        placeholder='Search'
           />
      <button className="mx-2" type="submit">
           <IoSearchOutline className="w-5 h-5" />

@@ -50,7 +50,7 @@ export const RegisterForm = () => {
       } */}
 
 
-      <label htmlFor="email">Nombre completo</label>
+      <label htmlFor="email">Complete name</label>
       <input
         className={
           clsx(
@@ -65,7 +65,7 @@ export const RegisterForm = () => {
         { ...register('name', { required: true }) }
       />
 
-      <label htmlFor="email">Correo electrónico</label>
+      <label htmlFor="email">Email</label>
       <input
         className={
           clsx(
@@ -79,7 +79,7 @@ export const RegisterForm = () => {
         { ...register('email', { required: true, pattern: /^\S+@\S+$/i }) }
       />
 
-      <label htmlFor="email">Contraseña</label>
+      <label htmlFor="email">Password</label>
       <input
         className={
           clsx(
@@ -98,7 +98,7 @@ export const RegisterForm = () => {
         
       
 
-      <button className="btn-primary">Crear cuenta</button>
+      <button className="btn-primary">Create account</button>
 
       {/* divisor l ine */}
       <div className="flex items-center my-5">
@@ -108,7 +108,7 @@ export const RegisterForm = () => {
       </div>
 
       <Link href="/auth/login" className="btn-secondary text-center">
-        Ingresar
+        Login
       </Link>
     </form>
   );

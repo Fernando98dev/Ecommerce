@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s - Teslo | Shop',
     default: 'Home - Teslo | Shop'
   },
-  description: "Una tienda virtual de productos",
+  description: "Virtual Shop of products",
 };
 
 export default function RootLayout({

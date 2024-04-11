@@ -22,11 +22,11 @@ export default async function OrdersPage({ searchParams }: Props) {
 
   return (
     <>
-      <Title title="Mantenimiento de productos" />
+      <Title title="Products Maintenance" />
 
       <div className="flex justify-end mb-5">
         <Link href="/admin/product/new" className="btn-primary">
-          Nuevo producto
+          New producto
         </Link>
       </div>
 
@@ -38,37 +38,37 @@ export default async function OrdersPage({ searchParams }: Props) {
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Imagen
+                Image
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Titulo
+                Title
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Precio
+                Price
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Género
+                Gender
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Inventario
+                Inventoty
               </th>
               <th
                 scope="col"
                 className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
               >
-                Tallas
+                Sizes
               </th>
             </tr>
           </thead>
