@@ -79,7 +79,7 @@ function LoginButton() {
               "btn-disabled": pending
           })}
           disabled = {pending}>
-          Ingresar
+          Log in
         </button>
   );
 }
